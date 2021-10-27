@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+/* global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(226, 43%, 10%);
+  font-family: 'Rubik', sans-serif;
+}
+
+main {
+  padding: 2rem 0;
+}
+
+.container {
+  max-width: 375px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+}
+
+/* person */
+.person {
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 12px;
+  display: grid;
+}
+
+.person-info {
+  background-color: hsl(246, 80%, 60%);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  gap: 1rem;
+}
+
+.person-info img {
+  width: 5rem;
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+
+.person-name {
+  color: #fff;
+}
+.person-name p {
+  font-weight: 300;
+}
+.person-name h1 {
+  font-weight: 400;
+}
+
+.person-toggle {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.date {
+  color: hsl(236, 100%, 87%);
+  transition: color 0.4s linear;
+}
+.date:hover {
+  color: #fff;
+}
+.date.active {
+  color: #fff;
+}
+
+/* items */
+.items {
+  display: grid;
+  gap: 1rem;
+}
+.work .item-header {
+  background: hsl(15, 100%, 70%);
+}
+.play .item-header {
+  background: hsl(195, 74%, 62%);
+}
+.study .item-header {
+  background: hsl(348, 100%, 68%);
+}
+.exercise .item-header {
+  background: hsl(145, 58%, 55%);
+}
+.social .item-header {
+  background: hsl(264, 64%, 52%);
+}
+.selfcare .item-header {
+  background: hsl(43, 84%, 65%);
+}
+
+.item-card {
+  cursor: pointer;
+}
+
+.item-header {
+  position: relative;
+  height: 4rem;
+  border-radius: 12px;
+  z-index: -1;
+}
+
+.item-header img {
+  position: absolute;
+  width: 5rem;
+  height: 4rem;
+  object-fit: contain;
+  z-index: -2;
+  bottom: 0;
+  right: 10px;
+}
+
+.item-content {
+  background: hsl(235, 46%, 20%);
+  border-radius: 12px;
+  padding: 2rem 1rem;
+  margin-top: -20px;
+  transition: background 0.4s linear;
+}
+
+.item-card:hover .item-content {
+  background: hsl(235, 45%, 61%);
+}
+
+.item-title {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.hour {
+  font-size: 40px;
+  font-weight: 00;
+  color: #fff;
+}
+
+.last {
+  color: hsl(236, 100%, 87%);
+}
+
+/* attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: #fff;
+}
+.attribution a {
+  color: hsl(246, 80%, 60%);
+}
+
+/* meadi screen */
+@media screen and (min-width: 1040px) {
+  main {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+
+  .container {
+    max-width: 1040px;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+  }
+
+  .person-info {
+    flex-flow: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 2rem;
+  }
+
+  .person-info h1 {
+    font-size: 3rem;
+    margin-top: 10px;
+  }
+
+  .person-toggle {
+    display: grid;
+    gap: 20px;
+    padding: 2rem;
+  }
+
+  .items {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .item-content {
+    padding: 2rem;
+  }
+
+  .item-footer {
+    flex-flow: column;
+    gap: 10px;
+    align-items: flex-start;
+    margin-top: 1rem;
+  }
+
+  .hour {
+    font-size: 50px;
+    color: #fff;
+  }
+
+  .attribution {
+    grid-column: 1 / 3;
+  }
+}
