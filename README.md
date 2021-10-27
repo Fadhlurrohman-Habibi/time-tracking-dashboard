@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Dekstop](./screenshot.jpg)
-![Mobille](./screenshot1.jpg)
+![Dekstop](.images/screenshot.jpg)
+![Mobille](.iamges/screenshot1.jpg)
 
 ### Links
 
