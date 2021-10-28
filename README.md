@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/Fadhlurrohman-Habibi/time-tracking-dashboard)
-- Live Site URL: [Github Pages](https://github.com/Fadhlurrohman-Habibi/time-tracking-dashboard/settings/pages)
+- Live Site URL: [Netlify](https://thirsty-hawking-3c44fd.netlify.app/)
 
 ## My process
 
@@ -49,12 +49,9 @@ Users should be able to:
 - [Next.js](https://nextjs.org/) - React framework
 - [Styled Components](https://styled-components.com/) - For styles
 
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+### What I learned
+I learnt how to use CSS grid and how to get data from data.json by asigning it to a varriable.
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/fadhlurrohman-habibi)
-- Twitter - [@yourusername](https://www.twitter.com/fdrlhmnhabibi)
+- Frontend Mentor - [@fadhlurrohman-habibi](https://www.frontendmentor.io/profile/fadhlurrohman-habibi)
